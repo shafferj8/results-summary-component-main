@@ -29,16 +29,17 @@ body {
 
 .circle-result {
     margin: auto;
-    width : 200px;
+    width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-image: linear-gradient(hsl(252, 100%, 50%),hsla(241, 72%, 46%, 0));
+    background-image: linear-gradient(hsl(252, 100%, 50%), hsla(241, 72%, 46%, 0));
 }
 
 .your-result {
     font-weight: 500;
     font-size: 1.4rem;
-    color: white;
+    color: rgb(205, 203, 203);
+    ;
     margin: 35px auto 25px auto;
 }
 
@@ -50,7 +51,15 @@ body {
 }
 
 .outof {
-    color: white;
+    color: rgb(196, 193, 193);
+}
+
+span {
+    color: rgb(110, 109, 109);
+}
+
+strong {
+    color: black;
 }
 
 .reaction {
@@ -61,7 +70,7 @@ body {
 }
 
 .details {
-    color: white;
+    color: rgb(205, 203, 203);
     padding: 20px 18%;
     margin-bottom: 20px;
 }
@@ -75,6 +84,10 @@ body {
     width: 80%;
     height: 50px;
     margin-top: 5px;
+    background-color: black;
+}
+
+.continue:hover {
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
@@ -91,35 +104,59 @@ body {
     font-weight: 700;
 }
 
-span {
-    font-weight : 700;
-}
-
 .table {
-    display: grid;
-    grid-template-columns: 30px auto auto;
-    margin: 35px auto;
-    row-gap: 50px;
+    margin-right: 40px;
 }
 
-.react {
+.row {
+    display: flex;
+    margin: 20px 0 20px 0;
+    border-radius: 10px;
+}
+
+.text-react {
     color: hsl(0, 100%, 67%);
 }
 
-.memory {
+.text-memory {
     color: hsl(39, 100%, 56%);
 }
 
-.verbal {
+.text-verbal {
     color: hsl(166, 100%, 37%);
 }
 
-.visual {
+.text-visual {
     color: hsl(234, 85%, 45%);
 }
 
+.background-react {
+    background-color: hsl(0, 100%, 98%);
+}
+
+.background-memory {
+    background-color: hsl(39, 100%, 98%);
+}
+
+.background-verbal {
+    background-color: hsl(166, 100%, 98%);
+}
+
+.background-visual {
+    background-color: hsl(234, 85%, 98%);
+}
+
+.first {
+    margin: 15px 15px;
+}
+
 .second {
-    text-align: left;
+    margin: auto 0;
+}
+
+.third {
+    display: flex;
+    margin: auto 20px auto auto;
 }
 
 @media screen and (max-width: 375px) {
